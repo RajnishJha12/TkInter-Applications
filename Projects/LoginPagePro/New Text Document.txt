@@ -1,0 +1,6 @@
+How to link one GUItkinter window to another in python 1
+
+How to go from one window to another window in Tkinter.
+
+In tkinter how to move from one view to another view or one window to another window.
+Use Frame to move from one view to another view or one window to another window in tkinter.
