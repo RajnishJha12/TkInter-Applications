@@ -1,0 +1,84 @@
+$ git config --global user.name RajnishJha12
+
+$ git config --global user.email "rajnishjha.mule@gamil.com"
+
+$ git init
+
+$ git add .
+
+$ git commit -m "Inital commit"
+
+$ git status  #Otional command
+
+#Now after this go to the github repository homepage where you want to upload your project
+form computer and click on SSH and copy and paste that url like this:
+
+$ git remote add origin git@github.com:RajnishJha12/git@github.com:RajnishJha12/TkInter-Applications.git
+
+
+$ git push origin master # If you have created private repository in the GitHub then you have to generate SSH key and this command will give you error. However if you have created public repository then this command will work and upload your project into GitHub repository:
+You will get this error in case you have created private repository:
+The authenticity of host 'github.com (13.234.176.102)' can't be established.
+ECDSA key fingerprint is SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,13.234.176.102' (ECDSA) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Then go to your profile and click on Settings and choose SSH and GPG Keys and click on 
+New SSH Key
+Give Title and to give Name. go to the google and type "generate ssh in github"
+or use this link  https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+Then open gitbash and type this command:
+$ ssh-keygen -t ed25519 -C "rajnishjha12@gmail.com"
+
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/Admin/.ssh/id_ed25519):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Admin/.ssh/id_ed25519.
+Your public key has been saved in /c/Users/Admin/.ssh/id_ed25519.pub.
+The key fingerprint is:
+SHA256:1maQMDx3dFJDusHv+LPHMUL3vyGO0DUoEQ47LhvlgjA rajnishjha12@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|     .o. ooo=    |
+|      oo=oo+ .   |
+| E     *o++      |
+|  o . + .o.+o .  |
+|   . + oS.=o.+ . |
+|      =. oooo + .|
+|     .   ....+ +.|
+|          ..+ + o|
+|           .o= ..|
++----[SHA256]-----+
+
+$ cat /c/Users/Admin/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIB3ZdIZk/MsNldcoagVsBlODqwE72Porxn45mUqv82Ql rajnishjha12@gmail.com
+
+So copy this line : ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIB3ZdIZk/MsNldcoagVsBlODqwE72Porxn45mUqv82Ql rajnishjha12@gmail.com
+and paste to the GitHub given key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIB3ZdIZk/MsNldcoagVsBlODqwE72Porxn45mUqv82Ql rajnishjha12@gmail.com
+to generate SSH key
+
+Finally push the project to your private repository with this command and you can see your project there:
+$ git push origin master
+
+If we want to add something new to this repository then:
+
+Everything up-to-date
+
+$ git status
+
+
+
+
+
+
+
+
+
+
+
