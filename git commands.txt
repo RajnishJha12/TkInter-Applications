@@ -67,10 +67,17 @@ Finally push the project to your private repository with this command and you ca
 $ git push origin master
 
 If we want to add something new to this repository then:
+$ git push origin master
 
 Everything up-to-date
 
 $ git status
+
+$ git add .
+
+$ git commit -m "added new file"
+
+$ git push origin master
 
 
 
